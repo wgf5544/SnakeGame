@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.game-container {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    max-width: 500px;
+    width: 100%;
+}
+
+h1 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.game-info {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.game-controls {
+    margin-bottom: 15px;
+}
+
+.speed-control {
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.speed-control label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #333;
+}
+
+.speed-control input[type="range"] {
+    width: 80%;
+    margin: 0 auto;
+    cursor: pointer;
+}
+
+button {
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 0 5px;
+    padding: 8px 15px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+button:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+}
+
+#game-board {
+    background-color: #222;
+    border-radius: 5px;
+    display: block;
+    margin: 0 auto 20px;
+    max-width: 100%;
+}
+
+.game-instructions {
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    padding: 15px;
+    text-align: left;
+}
+
+.game-instructions h2 {
+    color: #333;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.game-instructions p {
+    color: #666;
+    margin-bottom: 5px;
+}
+
+/* 响应式设计 */
+@media (max-width: 500px) {
+    .game-info {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .game-controls {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    button {
+        margin: 5px;
+    }
+}
